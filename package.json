@@ -1,0 +1,38 @@
+{
+  "name": "produce-shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "app": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riocastillo/produce-shopping/issues"
+  },
+  "homepage": "",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.4",
+    "morgan": "^1.10.0",
+    "node": "^17.7.2",
+    "nodejs": "^0.0.0",
+    "nodemon": "^2.0.16",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

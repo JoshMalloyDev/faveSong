@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <title>Save Music App</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1>Welcome, <%= user.local.email%>! </h1>
+        <a href="/" class="btn btn-default btn-sm logout">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6 hide">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <h3>Whats Hot in 2022</h3><br>
+          <ul class="musicList">
+          <% for(var i=0; i<music.length; i++) {%>
+            <li class="message">
+              <img class="album-covers"src="<%=music[i].src%>">
+              <span class="albumName"><%= music[i].artist %></span><br><br>
+              <span class="artist"><%= music[i].album %></span>
+              <br><br>
+              <button class='save'>save this album</span>
+                <span class="link"style='display:none'><%=music[i].src%></span>
+            </li>
+          <% } %>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <!-- <img src="shop.png"> -->
+          <h3 id="savedTitle">Your Saved Albums
+          </h3><br>
+          <ul class="savedMusic">
+          <% for(var i=0; i<savedMusic.length; i++) {%>
+            <li class="albumList">
+              <div style="display:none"><%= savedMusic[i]._id %></div>
+
+              <span class="savedAlbum"><%= savedMusic[i].album %></span>
+              <span class="savedArtist"><%= savedMusic[i].artist %></span>
+              <p></p>
+              <img class="savedCover" src="<%=savedMusic[i].cover%>" alt="" >  
+              <br>    
+              <button class="deleteSaved"></button><br><br>
+            </li>
+          <% } %>
+          </ul>
+        </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

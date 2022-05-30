@@ -1,0 +1,201 @@
+body{
+    background: linear-gradient(321deg,#ffb500,#8a6400,#3100ff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color:white;
+  
+}
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+#writing > h1 {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size:40px;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.753),
+      10px -2px 5px rgba(255, 255, 255, 0.267);
+    letter-spacing: 3px;
+  
+    /* -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.74); */
+  }
+  
+  /* #writing > h2 {
+    font: 50px "Yanone Kaffeesatz", sans-serif;
+    color: black;
+    letter-spacing: 1px;
+  } */
+  
+  #writing {
+    width: 60%;
+    margin: auto;
+    margin-top: 12%;
+    background: rgba(255, 255, 255, 0.582);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
+  }
+  
+  #homePage {
+    border: 2px solid black;
+    height: 840px;
+    margin: auto;
+    background: url("produce.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  .savedCover{
+    width:90%;
+    padding-bottom:10px;
+  }
+
+.albumList:hover{
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+  .albumList{
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 44%;
+    height: 320px;
+    padding:20px;
+    border-radius:5px;
+    float: left;
+    margin: 3%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.507);
+    margin-bottom: 4.5%;
+  }
+
+  #logInOrSignUp > a {
+    width: 20%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.308);
+    margin-left: 1.5%;
+    border-radius: 8px;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+  
+  .mainPageBtn {
+    color: Red;
+    padding: 5px;
+  }
+  
+  #signInForm {
+    background: rgba(255, 255, 255, 0.61);
+    width: 50%;
+    margin-top: 8%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .signBody {
+    background: url("produce.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: black;
+  }
+  
+body, h3{
+  font-family: 'Roboto Mono', monospace;
+}
+
+  .signBody h1 {
+    font-size: 30px;
+
+  }
+
+  .artist{
+    font-style: italic;
+  }
+
+  
+  .page-header > h1 {
+    font-size: 60px;
+    color:white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .save {
+    border: none;
+  }
+  
+  .save:hover, .deleteSaved:hover {
+    transform: scale(1.1);
+  }
+  .save:active, .deleteSaved:active  {
+    transform: scale(0.8);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+.album-covers{
+  width:90%
+}
+  
+  .message {
+    width: 43%;
+    height: 340px;
+    float: left;
+    margin: 3%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.507);
+    margin-bottom: 4.5%;
+    background-color:rgba(255, 255, 255, 0.801);
+    border:2px solid black;
+    color:black;
+  }
+  
+  .col-sm-6 > img {
+    width: 25%;
+    float: left;
+    margin-top: 7%;
+  }
+  
+  .deleteSaved {
+    background: url("trash.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    border: none;
+  }
+  
+  .logout {
+    width: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    background: black;
+    color: white;
+    margin-bottom: 2.5%;
+  }
+  
+  .page-header {
+    border-bottom: 7px solid rgba(0, 0, 0, 0.39);
+  }
+  
